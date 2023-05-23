@@ -1,0 +1,83 @@
+/*MIXIN PARA FLEX*/
+@mixin flexible ($dis, $just , $direction , $corte, $align){
+    display: $dis;
+    justify-content: $just;
+    flex-flow: $direction  $corte;
+    align-items: $align;
+    
+}
+
+.contenedor-imagenes {
+    @include flexible (flex , space-around  , row, wrap , none );
+
+}
+
+
+/*PAG INSPIRACIONES*/
+
+.paragraph-title {
+    @include flexible(flex, center , column , nowrap , center);
+   
+}
+
+
+.item {
+    @include flexible(flex , space-between , row , wrap, center );
+    
+}
+
+
+/*PAGINA SUCURSALES*/
+
+.ubicaciones {
+    @include flexible(flex , space-between , row , wrap , none );
+}
+
+
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;    
+}
+
+/*Pag Index*/
+
+.contenedor-imagenes .imagen{
+    @include sizes(32%, 250px );
+ }
+
+.imagen img {
+   @include sizes(100%,100% );
+}
+
+.imagen:hover .overlay {
+    @include sizes(100%,100% );
+
+}
+
+
+/*Pagina Inspiraciones*/
+figure {
+    @include sizes(69%,auto );
+    .picture{
+        @include sizes(100%,auto );
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

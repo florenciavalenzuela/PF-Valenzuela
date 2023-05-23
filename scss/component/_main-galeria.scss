@@ -1,0 +1,76 @@
+
+.galeria{
+    font-family: 'Open Sans', sans-serif;
+
+    h2{
+        text-align: center;
+        margin: 20px 0 15px 0;
+        font-weight: 300;
+    }
+    .contenedor-imagenes{
+        width: 85%;
+        margin: auto;
+        border-radius: 3px;
+
+        .imagen{
+            position: relative;
+            margin-bottom: 5px;
+            
+            img{
+                object-fit: cover;
+            }
+
+            .overlay{
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                background-color: none;
+                transition: .5s ease;
+                overflow: hidden;
+
+                h2{
+                    color: white;
+                    font-size: 30px;
+                    position: absolute;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.imagen:hover .overlay{
+    cursor: pointer;
+}
+
+/*PAG INSPIRACIONES*/
+.paragraph-title {
+    margin: 50px 0;
+}
+
+.item {
+    margin-bottom: 50px;
+}
+
+.info-producto {
+    width: 30%;
+    h1{
+        font-size: 3em ;
+        line-height: 1em;
+        text-align: center ;
+        margin: 10px 0;
+    }
+    h2{
+        font-family: 'Konkhmer Sleokchher', cursive;
+        color: rgb(3, 3, 3);
+    }
+    p{
+        text-align: center;
+    }
+}
+/* FIN PAGINA INSPIRACIONES */
+
+// body {
+//     font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+//     font-size: 12px
+// }

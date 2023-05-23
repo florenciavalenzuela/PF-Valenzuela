@@ -1,0 +1,25 @@
+
+.logo-header {
+    a{
+      text-decoration: none;
+
+        h1{
+            text-align: center;
+            color:black;
+            text-shadow: 0 0 8px rgb(255, 255, 255);
+        }
+    }
+}
+
+/* Menu navegable */
+.first-menu {
+    display:flex;
+    list-style: none;
+
+    li {
+        margin: 5px 10px 20px 10px;
+        height: 15%; 
+    }
+}
+/* Fin menu navegable */
+

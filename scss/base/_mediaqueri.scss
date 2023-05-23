@@ -1,0 +1,49 @@
+/* INDEX */
+
+
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor-imagenes {
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+
+
+/* PAGINA INSPIRACIONES */
+
+@media only screen and (min-width: 1281px) {
+    .container-items {
+        margin-left: auto;
+        margin-right: auto;
+        width: 84%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .containter-items {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .item{
+        flex-direction: row;
+    }
+} 
+
+
+/*PAG SUCURSALES*/
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .sucursales { 
+    }
+}

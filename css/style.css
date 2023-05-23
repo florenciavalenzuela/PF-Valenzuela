@@ -1,0 +1,232 @@
+/* Nesting o anidamiento 
+Nos ayuda a ver de una manera mas visual la cascada de html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-header a {
+  text-decoration: none;
+}
+.logo-header a h1 {
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+/* Menu navegable */
+.first-menu {
+  display: flex;
+  list-style: none;
+}
+.first-menu li {
+  margin: 5px 10px 20px 10px;
+  height: 15%;
+}
+
+/* Fin menu navegable */
+#contenedor-footer {
+  background-color: rgb(172, 167, 167);
+  padding: 0;
+}
+
+.img-insta {
+  margin-top: 5px;
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.img-face {
+  margin-top: 5px;
+  max-width: 20px;
+  max-height: 25px;
+}
+
+.galeria {
+  font-family: "Open Sans", sans-serif;
+}
+.galeria h2 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+}
+.galeria .contenedor-imagenes {
+  width: 85%;
+  margin: auto;
+  border-radius: 3px;
+}
+.galeria .contenedor-imagenes .imagen {
+  position: relative;
+  margin-bottom: 5px;
+}
+.galeria .contenedor-imagenes .imagen img {
+  object-fit: cover;
+}
+.galeria .contenedor-imagenes .imagen .overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: none;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.galeria .contenedor-imagenes .imagen .overlay h2 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+}
+
+.imagen:hover .overlay {
+  cursor: pointer;
+}
+
+/*PAG INSPIRACIONES*/
+.paragraph-title {
+  margin: 50px 0;
+}
+
+.item {
+  margin-bottom: 50px;
+}
+
+.info-producto {
+  width: 30%;
+}
+.info-producto h1 {
+  font-size: 3em;
+  line-height: 1em;
+  text-align: center;
+  margin: 10px 0;
+}
+.info-producto h2 {
+  font-family: "Konkhmer Sleokchher", cursive;
+  color: rgb(3, 3, 3);
+}
+.info-producto p {
+  text-align: center;
+}
+
+/* FIN PAGINA INSPIRACIONES */
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+form .formulario p {
+  font-family: "Roboto Slab", serif;
+}
+
+.sucursales {
+  padding: 2%;
+}
+.sucursales h2 {
+  display: block;
+  text-align: center;
+}
+.sucursales .ubicaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sucursales .ubicaciones .mapa p {
+  font-family: "Konkhmer Sleokchher";
+  text-align: center;
+  font-size: 20px;
+}
+
+/*MIXIN PARA FLEX*/
+.contenedor-imagenes {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: none;
+}
+
+/*PAG INSPIRACIONES*/
+.paragraph-title {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/*PAGINA SUCURSALES*/
+.ubicaciones {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: none;
+}
+
+/*Pag Index*/
+.contenedor-imagenes .imagen {
+  width: 32%;
+  height: 250px;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen:hover .overlay {
+  width: 100%;
+  height: 100%;
+}
+
+/*Pagina Inspiraciones*/
+figure {
+  width: 69%;
+  height: auto;
+}
+figure .picture {
+  width: 100%;
+  height: auto;
+}
+
+/* INDEX */
+@media screen and (max-width: 1000px) {
+  .contenedor-imagenes {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contenedor-imagenes {
+    width: 90%;
+  }
+  .contenedor-imagenes .imagen {
+    width: 48%;
+  }
+}
+/* PAGINA INSPIRACIONES */
+@media only screen and (min-width: 1281px) {
+  .container-items {
+    margin-left: auto;
+    margin-right: auto;
+    width: 84%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .containter-items {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .item {
+    flex-direction: row;
+  }
+}
+/*PAG SUCURSALES*/
+
+/*# sourceMappingURL=style.css.map */
