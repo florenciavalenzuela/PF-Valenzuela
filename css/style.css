@@ -26,6 +26,12 @@ Nos ayuda a ver de una manera mas visual la cascada de html*/
 }
 
 /* Fin menu navegable */
+.paragraph-index {
+  color: #fff;
+  font-family: "Bodoni Moda", serif;
+  font-size: 2.5em;
+}
+
 #contenedor-footer {
   background-color: rgb(172, 167, 167);
   padding: 0;
