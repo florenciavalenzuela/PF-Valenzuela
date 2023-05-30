@@ -49,6 +49,20 @@ Nos ayuda a ver de una manera mas visual la cascada de html*/
   max-height: 25px;
 }
 
+/*VIDEO*/
+.video-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  margin-top: 5%;
+  
+}
+
+
+
 .galeria {
   font-family: "Open Sans", sans-serif;
 }
