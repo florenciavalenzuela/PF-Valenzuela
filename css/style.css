@@ -57,11 +57,11 @@ Nos ayuda a ver de una manera mas visual la cascada de html*/
   flex-direction: column;
   position: relative;
   height: auto;
-  margin-top: 5%;
-  
 }
 
-
+#new-video {
+  margin-top: 5%;
+}
 
 .galeria {
   font-family: "Open Sans", sans-serif;
